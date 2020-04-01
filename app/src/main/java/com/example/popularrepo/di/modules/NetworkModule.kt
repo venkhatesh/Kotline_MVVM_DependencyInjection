@@ -17,7 +17,7 @@ import javax.inject.Singleton
     @Provides
     @Singleton
     @JvmStatic
-    internal fun provideNetworkService(retrofit: Retrofit): NetworkService? {
+    internal fun provideNetworkService(retrofit: Retrofit): NetworkService {
         return retrofit.create<NetworkService>(NetworkService::class.java)
     }
 
